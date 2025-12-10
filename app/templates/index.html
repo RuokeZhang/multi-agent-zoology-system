@@ -1,0 +1,56 @@
+```
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Zoology Multi-Agent Demo</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    .tabs { display: flex; gap: 10px; margin-bottom: 10px; }
+    .tab { padding: 8px 12px; border: 1px solid #ccc; cursor: pointer; }
+    .tab.active { background: #eef; border-color: #88a; }
+    #response { margin-top: 16px; white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+  <h1>Zoology Multi-Agent UI</h1>
+  <div class="tabs" id="tabs"></div>
+  <div>
+    <textarea id="question" rows="3" cols="80" placeholder="Ask about habitats, species, or behaviors..."></textarea>
+  </div>
+  <button id="askBtn">Ask</button>
+  <div id="response"></div>
+  <script>
+    const agents = {{ agents|tojson }};
+    let activeAgent = agents[0];
+
+    function renderTabs() {
+      const tabsDiv = document.getElementById('tabs');
+      tabsDiv.innerHTML = '';
+      agents.forEach(agent => {
+        const el = document.createElement('div');
+        el.className = 'tab' + (agent === activeAgent ? ' active' : '');
+        el.innerText = agent;
+        el.onclick = () => { activeAgent = agent; renderTabs(); };
+        tabsDiv.appendChild(el);
+      });
+    }
+
+    async function ask() {
+      const question = document.getElementById('question').value;
+      const res = await fetch('/api/ask', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ question, agent: activeAgent })
+      });
+      const data = await res.json();
+      document.getElementById('response').innerText =
+        `Agent: ${data.agent}\nSources: ${data.sources}\nTrace: ${data.trace}\nAnswer: ${data.answer}`;
+    }
+
+    document.getElementById('askBtn').onclick = ask;
+    renderTabs();
+  </script>
+</body>
+</html>
+```
