@@ -1,0 +1,102 @@
+```
+{
+  "species": [
+    {
+      "name": "African Elephant",
+      "taxonomy": "Loxodonta africana",
+      "habitat": "Savannahs, forests, and deserts across sub-Saharan Africa",
+      "diet": "Herbivore: grasses, leaves, bark, fruits",
+      "behavior": "Highly social, matriarchal herds, complex vocalizations",
+      "status": "Vulnerable"
+    },
+    {
+      "name": "Bald Eagle",
+      "taxonomy": "Haliaeetus leucocephalus",
+      "habitat": "Near large bodies of open water across North America",
+      "diet": "Carnivore: fish, small mammals, carrion",
+      "behavior": "Soaring flight, territorial, builds large stick nests",
+      "status": "Least Concern"
+    },
+    {
+      "name": "Giant Panda",
+      "taxonomy": "Ailuropoda melanoleuca",
+      "habitat": "Mountainous bamboo forests in China",
+      "diet": "Primarily bamboo, occasional small animals",
+      "behavior": "Solitary, crepuscular, spends most time feeding",
+      "status": "Vulnerable"
+    },
+    {
+      "name": "Green Sea Turtle",
+      "taxonomy": "Chelonia mydas",
+      "habitat": "Tropical and subtropical oceans worldwide",
+      "diet": "Herbivore: seagrass, algae",
+      "behavior": "Long-distance migrations, basking on beaches",
+      "status": "Endangered"
+    },
+    {
+      "name": "Snow Leopard",
+      "taxonomy": "Panthera uncia",
+      "habitat": "High-altitude mountains of Central and South Asia",
+      "diet": "Carnivore: wild sheep and goats",
+      "behavior": "Solitary, crepuscular, stealth ambush predator",
+      "status": "Vulnerable"
+    },
+    {
+      "name": "Koala",
+      "taxonomy": "Phascolarctos cinereus",
+      "habitat": "Eucalyptus woodlands in eastern Australia",
+      "diet": "Herbivore: eucalyptus leaves",
+      "behavior": "Nocturnal, sedentary, specialized gut for toxins",
+      "status": "Vulnerable"
+    },
+    {
+      "name": "King Penguin",
+      "taxonomy": "Aptenodytes patagonicus",
+      "habitat": "Subantarctic islands and cold oceans",
+      "diet": "Carnivore: fish, squid",
+      "behavior": "Colonial breeding, deep diving, vocal mate recognition",
+      "status": "Least Concern"
+    },
+    {
+      "name": "Red Kangaroo",
+      "taxonomy": "Osphranter rufus",
+      "habitat": "Arid and semi-arid Australia",
+      "diet": "Herbivore: grasses",
+      "behavior": "Hopping locomotion, social mobs, powerful tail",
+      "status": "Least Concern"
+    },
+    {
+      "name": "Emperor Penguin",
+      "taxonomy": "Aptenodytes forsteri",
+      "habitat": "Antarctic sea ice and waters",
+      "diet": "Carnivore: fish, krill, squid",
+      "behavior": "Deep diving, cooperative huddling, long fasting",
+      "status": "Near Threatened"
+    },
+    {
+      "name": "Jaguar",
+      "taxonomy": "Panthera onca",
+      "habitat": "Tropical rainforests, wetlands, grasslands in the Americas",
+      "diet": "Carnivore: mammals, reptiles, fish",
+      "behavior": "Powerful bite, ambush predator, excellent swimmer",
+      "status": "Near Threatened"
+    },
+    {
+      "name": "Polar Bear",
+      "taxonomy": "Ursus maritimus",
+      "habitat": "Arctic sea ice and coastlines",
+      "diet": "Carnivore: seals, scavenged whale carcasses",
+      "behavior": "Strong swimmers, solitary, rely on sea ice for hunting",
+      "status": "Vulnerable"
+    },
+    {
+      "name": "African Lion",
+      "taxonomy": "Panthera leo",
+      "habitat": "Savannahs and grasslands of sub-Saharan Africa",
+      "diet": "Carnivore: large ungulates",
+      "behavior": "Social prides, cooperative hunting, territorial roaring",
+      "status": "Vulnerable"
+    }
+  ]
+}
+```
